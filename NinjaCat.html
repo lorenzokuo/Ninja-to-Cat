@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ninja cat</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<style type="text/css">
+	body {
+		display: block;
+	}
+	.container {
+		width: 181px;
+	}
+		
+
+	</style>
+
+	<script>
+		$(document).ready(function() {
+	   	console.log('ready!')
+	       // your jquery codes here
+	       // $('img').click(function(){ 
+	       // 	console.log('clicked!!!!!!')
+	       // 	$(this).fadeOut('slow');
+	       // });
+	       // $('.btn').click(function(){ 
+	       // 	console.log('clicked!!!!!!')
+	       // 	$('img').show();
+	       // });
+       	$('img#0').click(function() {
+			console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+			$(this).attr('src','img/cat0.png');
+
+		});
+		$('img#1').click(function() {
+			console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+			$(this).attr('src','img/cat1.png');
+
+		});
+		$('img#2').click(function() {
+			console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+			$(this).attr('src','img/cat2.png');
+
+		});
+		$('img#3').click(function() {
+			console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+			$(this).attr('src','img/cat3.png');
+
+		});
+		$('img#4').click(function() {
+			console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+			$(this).attr('src','img/cat4.png');
+
+		});
+
+
+	   });
+	</script>
+</head>
+<body>
+	<div class="container">
+		<img id="0" src='img/ninja0.png' data-alt-src='img/cat0.png'>
+		<img id="1" src='img/ninja1.png' data-alt-src='img/cat1.png'>
+		<img id="2" src='img/ninja2.png' data-alt-src='img/cat2.png'>
+		<img id="3" src='img/ninja3.png' data-alt-src='img/cat3.png'>
+		<img id="4" src='img/ninja4.png' data-alt-src='img/cat4.png'>
+	</div>
+</body>
+</html>
